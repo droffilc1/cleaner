@@ -14,7 +14,7 @@ This Bash script automates the process of updating, upgrading, and cleaning up a
     
     ```bash    
     cliff@ubuntu:~$ ls
-    cleaner
+    cleaner LICENSE  README.md
     cliff@ubuntu:~$ cd cleaner/
     cliff@ubuntu:~/cleaner$
     ```
