@@ -1,4 +1,11 @@
 #!/bin/env bash
+# a simple script designed to automate the process of updating, upgrading, and cleaning up a Debian-based Linux system
+
+# set up a logging mechanism where both standard output and standard error are printed to the terminal
+# and simultaneously written to a log file named system_update.log. 
+LOG_FILE="system_update.log"
+exec > >(tee -i $LOG_FILE)
+exec 2>&1
 
 echo -e "\e[1;32m Step 1: Updating | Upgrading packages\n=====================================\e[0m"
 sudo apt update -y && sudo apt upgrade -y
