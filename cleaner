@@ -5,6 +5,9 @@ sudo apt update -y && sudo apt upgrade -y
 
 echo
 
+echo -e "\e[1;32m Step 2: Uninstalling the package\n=====================================\e[0m"
+sudo apt remove --purge -y $1
+
 echo -e "\e[1;32m Step 3: Repairing broken packages/dependencies\n=============================================\e[0m"
 sudo apt --fix-missing update -y
 sudo apt install -f -y
