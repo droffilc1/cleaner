@@ -10,25 +10,22 @@ exec 2>&1
 echo -e "\e[1;32m Step 1: Updating | Upgrading packages\n=====================================\e[0m"
 sudo apt-get update -y && sudo apt-get upgrade -y
 
-echo
 
-echo -e "\e[1;32m Step 2: Uninstalling the package\n=====================================\e[0m"
-sudo apt-get remove --purge -y $1
-
-echo -e "\e[1;32m Step 3: Repairing broken packages/dependencies\n=============================================\e[0m"
+echo -e "\e[1;32m Step 2: Repairing broken packages/dependencies\n=============================================\e[0m"
 sudo apt --fix-missing update -y
 sudo apt-get install -f -y
 
 echo
 
-echo -e "\e[1;32m Step 4: Removing orphaned packages and dependencies\n====================================================\e[0m"
+echo -e "\e[1;32m Step 3: Removing orphaned packages and dependencies\n====================================================\e[0m"
 sudo apt-get autoremove --purge
 
 echo
 
-echo -e "\e[1;32m Step 5: Removing all the junk files\n=====================================\e[0m"
+echo -e "\e[1;32m Step 4: Removing all the junk files\n=====================================\e[0m"
 sudo apt-get clean -y
 sudo apt-get autoclean -y
+sudo apt-get autoremove -y
 
 echo
 

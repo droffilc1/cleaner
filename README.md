@@ -38,15 +38,6 @@ This Bash script automates the process of updating, upgrading, and cleaning up a
 
 ## Notes
 
-- **Package Removal (Optional):**
-    
-    - If you choose to uninstall a package, provide its name as an argument when running the script. For example:
-        
-        Copy code
-        
-        `cleaner firefox` 
-        
-    - Omit the package name argument if you do not want to uninstall any package.
 - **Root Privileges:**
     
     - The script requires root privileges to perform system updates and package installations. Ensure you have appropriate permissions or run the script with `sudo`.

@@ -1,0 +1,56 @@
+[1;32m Step 1: Updating | Upgrading packages
+=====================================[0m
+Hit:1 http://ke.archive.ubuntu.com/ubuntu focal InRelease
+Get:2 https://brave-browser-apt-release.s3.brave.com stable InRelease [7,546 B]
+Get:3 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Get:4 http://ke.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:5 http://ke.archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:6 http://packages.microsoft.com/repos/code stable InRelease [3,589 B]
+Get:7 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Err:2 https://brave-browser-apt-release.s3.brave.com stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A8580BDC82D3DC6C
+Get:8 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:9 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [37.8 kB]
+Get:10 http://ke.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,090 kB]
+Get:11 http://packages.microsoft.com/repos/code stable/main amd64 Packages [17.4 kB]
+Get:12 http://packages.microsoft.com/repos/code stable/main arm64 Packages [17.3 kB]
+Get:13 http://packages.microsoft.com/repos/code stable/main armhf Packages [17.5 kB]
+Get:14 https://dl.google.com/linux/chrome/deb stable/main amd64 Packages [1,081 B]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,710 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [706 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [413 kB]
+Get:18 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2,547 kB]
+Get:19 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [355 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [937 kB]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [645 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [197 kB]
+Get:23 http://ke.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [931 kB]
+Get:24 http://ke.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [496 kB]
+Get:25 http://ke.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,665 kB]
+Get:26 http://ke.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [371 kB]
+Get:27 http://ke.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,163 kB]
+Get:28 http://ke.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [772 kB]
+Get:29 http://ke.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [279 kB]
+Fetched 3,269 kB in 10s (338 kB/s)
+Reading package lists...
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://brave-browser-apt-release.s3.brave.com stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A8580BDC82D3DC6C
+W: Failed to fetch https://brave-browser-apt-release.s3.brave.com/dists/stable/InRelease  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY A8580BDC82D3DC6C
+W: Some index files failed to download. They have been ignored, or old ones used instead.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following packages have been kept back:
+  linux-generic-hwe-20.04 linux-headers-generic-hwe-20.04
+  linux-image-generic-hwe-20.04
+The following packages will be upgraded:
+  code docker-ce docker-ce-cli docker-ce-rootless-extras firefox-locale-en
+  google-chrome-stable libssl-dev libssl1.1 linux-libc-dev openssl
+10 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Need to get 259 MB of archives.
+After this operation, 62.5 kB of additional disk space will be used.
+Get:1 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-cli amd64 5:25.0.3-1~ubuntu.20.04~focal [13.7 MB]
+Get:2 https://dl.google.com/linux/chrome/deb stable/main amd64 google-chrome-stable amd64 121.0.6167.160-1 [106 MB]
+Get:3 http://ke.archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl-dev amd64 1.1.1f-1ubuntu2.21 [1,585 kB]
+Get:4 http://packages.microsoft.com/repos/code stable/main amd64 code amd64 1.86.1-1707298119 [99.8 MB]
+Get:5 http://ke.archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.21 [1,321 kB]
